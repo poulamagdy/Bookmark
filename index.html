@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Bookmark</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="vh-100">
+            <div class="container py-5">
+                <div class="row">
+                    <h1 class="text-center line background">Bookmarker</h1>
+                    <div class="py-5">
+                        <h2 class="text-center mt-3"><i class="fa-solid fa-bookmark text-danger"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark icon-color"></i></h2>
+                        <label for="bookmarkinp" class="mt-5 w-100 fw-bold">
+                            <i class="fa-solid fa-book-bookmark pe-2 pb-3"></i>
+                            Site Name
+                            <input type="text" oninput="validation()" class="form-control" placeholder="Bookmark Name" id="bookmarkinp">
+                        </label>
+                        <label for="" class="mt-4 w-100 fw-bold">
+                            <i class="fa-solid fa-link pe-2 pb-3"></i>
+                            Site URL
+                            <input type="text" class="form-control" placeholder="Website URL" id="urlinp">
+                        </label>
+                        <div class="text-center mt-4 line2">
+                            <button class="btn btn-danger py-2 px-5" onclick="addvalue()">Submit</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="vh-100 background">
+                <div class="container">
+                    <div class="row">
+                        <table class="table text-center fw-bold">
+                            <thead>
+                                <th>Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </thead>
+                            <tbody id="mybookmark">
+    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

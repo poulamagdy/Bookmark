@@ -1,0 +1,93 @@
+:root
+{
+    --mainfont: 'Pacifico', cursive;
+    --secfont: 'Righteous', cursive;
+}
+header
+{
+    background-color: #f7ecde;
+}
+.background
+{
+    background-color: #f7ecde;
+}
+.line
+{
+    font-family: var(--mainfont);
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+.line::before
+{
+    content: "";
+    position: absolute;
+    border-bottom: 2px black dotted;
+    width: 100%;
+    top: 180%;
+    right: 1px;
+}
+.background
+{
+    position: relative;
+}
+.background::after
+{
+    content: "";
+    position: absolute;
+    background-color: #FEC260;
+    width: 20%;
+    height: 30%;
+    bottom: 10%;
+    right: 40%;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+.background:hover::after
+{
+    background-color: #FEC260;
+    height: 60%;
+}
+.line2
+{
+    position: relative;
+}
+.line2::before
+{
+    content: "";
+    position: absolute;
+    border-bottom: 2px black dotted;
+    width: 100%;
+    top: 180%;
+    right: 1px;
+}
+h2
+{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--secfont);
+}
+
+.form-control:focus
+{
+    border-color: rgb(254, 194, 96) !important;
+    box-shadow: 0 0 0 0.2rem rgba(254, 194, 96, 0.25) !important;
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.icon-color
+{
+    color: #B2AB49;
+}
+.btn-color
+{
+    background-color: #B2AB49;
+}
+.btn-color:hover
+{
+    background-color: #8A9E23;
+}
